@@ -1,3 +1,5 @@
+/*CONFIGS: */
+
 html {
   scroll-behavior: smooth; /*suaviza mudança de sessao*/
 }
@@ -24,7 +26,20 @@ ul {
   color: black;
 }
 
-header {
+/*SESSAO 1: */
+#menu-responsivo {
+  display: none;
+}
+
+#responsive-footer {
+  display: none;
+}
+
+#contatos {
+  display: none;
+}
+
+#menu {
   height: 5vw;
   display: flex;
   align-items: center;
@@ -35,18 +50,18 @@ header {
   z-index: 1000;
 }
 
-header #Logo {
+#menu #Logo {
   font-family: "Poiret One", sans-serif;
   font-size: 2rem;
 }
 
-header nav {
+#menu nav {
   display: flex;
   align-items: center;
   gap: 2vw;
 }
 
-header nav button {
+#menu nav button {
   background-color: #dfc8b6;
   color: white;
   border: none;
@@ -57,13 +72,13 @@ header nav button {
   transition: 0.5s ease-in-out;
 }
 
-header nav button:hover {
+#menu nav button:hover {
   background-color: white;
   color: #dfc8b6;
   border: 2px solid black;
 }
 
-header nav ul {
+#menu nav ul {
   display: flex;
   gap: 2vw;
 }
@@ -75,6 +90,8 @@ main {
   justify-content: center;
   flex-direction: column;
 }
+
+/*SESSAO 2*/
 
 main #Home {
   display: flex;
@@ -100,6 +117,8 @@ main #Home .texto-apresentacao p {
 main #Home img {
   width: 35vw;
 }
+
+/*SESSAO 3: */
 
 main #Sobre {
   margin-block-start: 4vw;
@@ -146,6 +165,8 @@ main #Sobre h2 span {
 main #Sobre p {
   width: 50vw;
 }
+
+/*SESSAO 4: */
 
 main #Produtos {
   width: 95vw;
@@ -225,6 +246,8 @@ main #Produtos .lista-produtos .produto .nome-botao button:hover {
   color: #d9d9d9;
 }
 
+/*SESSAO 5: */
+
 main #Diferenciais {
   padding-block: 2vw;
   display: flex;
@@ -242,11 +265,15 @@ main #Diferenciais .texto-diferenciais {
 }
 main #Diferenciais .texto-diferenciais ul {
   line-height: 2;
+  width: 100%;
+  padding: 0;
 }
 
 main #Diferenciais .texto-diferenciais ul li span {
   font-weight: bold;
 }
+
+/*SESSAO 6: */
 
 main #Depoimentos {
   padding: 2vw;
@@ -291,40 +318,41 @@ main #Depoimentos .depoimento .nome-avaliacao {
   justify-content: space-between;
 }
 
+/*FOOTER: */
 
-footer {
+#footer {
   padding: 3vw;
-  background-color: #C4C8B6;
+  background-color: #c4c8b6;
   color: white;
 }
 
-footer .superior-footer {
+#footer .superior-footer {
   padding-block: 3vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-footer .superior-footer > p {
+#footer .superior-footer > p {
   font-size: 4.5vw;
   font-weight: bolder;
   line-height: 1.4;
-  color: #859B48;
+  color: #859b48;
 }
 
-footer .superior-footer > p span {
-  color: #1D361F;
+#footer .superior-footer > p span {
+  color: #1d361f;
 }
 
-footer .superior-footer .email {
+#footer .superior-footer .email {
   position: relative;
 }
 
-footer .superior-footer .email button {
+#footer .superior-footer .email button {
   position: absolute;
   top: 4.35vw;
   right: 1vw;
-  background-color: #1D361F;
+  background-color: #1d361f;
   font-weight: bolder;
   width: 2vw;
   height: 2vw;
@@ -333,43 +361,488 @@ footer .superior-footer .email button {
   border-radius: 10px;
 }
 
-footer .superior-footer .email input {
+#footer .superior-footer .email input {
   width: 25vw;
   padding: 1vw;
   border-radius: 10px;
   border: none;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   color: white;
 }
 
-footer hr {
+#footer hr {
   background-color: white;
   border: none;
   height: 2px;
 }
 
-footer .inferior-footer {
+#footer .inferior-footer {
   display: flex;
   flex-direction: column;
   gap: 4vw;
 }
 
-footer .inferior-footer .links {
+#footer .inferior-footer .links {
   display: flex;
   justify-content: space-around;
   width: 70vw;
 }
 
-footer .inferior-footer .links ul {
+#footer .inferior-footer .links ul {
   line-height: 2.4;
   color: white;
 }
 
-footer .inferior-footer .links ul .title {
+#footer .inferior-footer .links ul .title {
   font-weight: bold;
 }
 
-footer .inferior-footer .links ul li:hover {
+#footer .inferior-footer .links ul li:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/* RESPONSIVIDADE: */
+
+@media (max-width: 1025px) {
+  #menu {
+    height: 7vw;
+  }
+  #menu nav button {
+    width: 10vw;
+    height: 4vw;
+  }
+
+  /*SESSAO 1: */
+  main #Home {
+    gap: 5vw;
+  }
+
+  main #Home .texto-apresentacao {
+    width: 40vw;
+  }
+
+  /*SESSAO 3: */
+  main #Produtos .lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 8vw;
+  }
+  main #Produtos .lista-produtos .produto {
+    width: 35vw;
+  }
+
+  main #Produtos .lista-produtos .produto img {
+  width: 15vw;
+} 
+
+main #Produtos .lista-produtos .produto .nome-botao button {
+  height: 3vw;
+  width: 17vw;
+}
+main #Produtos .lista-produtos .produto .nome-botao  {
+  padding-bottom: 2vw;
+}
+
+/*SESSAO 5: */
+main #Depoimentos .cards-depoimento {
+  display: flex;
+flex-direction: column;
+align-items: center;
+gap: 8vw;
+}
+
+main #Depoimentos .depoimento {
+  width: 45vw;
+}
+
+/*FOOTER: */
+#footer .superior-footer .email button {
+  display: none;
+}
+
+#footer .superior-footer .email input {
+  width: 35vw;
+}
+
+/*FOOTER: */
+#footer .inferior-footer .links {
+  width: 80vw;
+}
+}
+
+@media (max-width: 770px) {
+  #menu {
+    display: none;
+    position: static;
+    margin: 0;
+  }
+    #menu-responsivo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    background-color: black;
+    color: white;
+  }
+
+  #menu-responsivo p {
+        font-family: "Poiret One", sans-serif;
+        font-size: 2rem;
+      }
+
+  /*SESSAO 1: */
+
+  main #Home {
+    flex-direction: column;
+  }
+
+  main #Home .texto-apresentacao {
+    width: 80%;
+  }
+
+  /*SESSAO 3: */
+
+  main #Produtos .lista-produtos {
+    gap: 10vw;
+  }
+
+  main #Produtos .lista-produtos .produto {
+    width: 42vw;
+    height: 50vw;
+  }
+
+  main #Produtos .lista-produtos .produto img {
+    width: 22vw;
+  }
+
+  main #Produtos .lista-produtos .produto .nome-botao {
+    padding-bottom: 5vw;
+  }
+
+  main #Produtos .lista-produtos .produto .nome-botao button {
+    width: 20vw;
+    height: 6vw;
+  }
+
+  /*SESSAO 5: */
+  main #Depoimentos .cards-depoimento{
+    gap: 5vw  
+  }
+
+  main #Depoimentos .depoimento {
+    width: 60vw;
+  }
+
+  /*FOOTER: */
+
+#footer .superior-footer .email input {
+  width: 35vw;
+}
+
+#footer .superior-footer .email button {
+  display: none;
+}
+
+#footer .inferior-footer .links {
+  width: 95vw;
+}
+}
+
+@media (max-width: 481px) {
+
+  ul {
+    font-size: 1rem;
+  }
+   h2,
+  main #Sobre h2 {
+    font-size: 1.7rem;
+  }
+   body p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+ 
+  
+    #menu-responsivo #logo-resp {
+    font-size: 1.5rem;
+  }
+
+  /*SESSAO 2: */
+   
+  main #Home {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+  }
+   main #Home .texto-apresentacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+   main #Home img {
+    width: 50vw;
+  }
+
+  /*SESSAO 3: */
+    main #Produtos .lista-produtos {
+    gap: 10vw;
+    }
+
+   main #Produtos .lista-produtos .produto {
+   width: 40vw;
+   height: 60vw;
+  } 
+
+  main #Produtos .lista-produtos .produto img {
+    width: 20vw;
+}
+
+main #Produtos .lista-produtos .produto .nome-botao {
+  padding-bottom: 2vw;
+}
+
+main #Produtos .lista-produtos .produto .nome-botao p{
+  text-align: center;
+  margin-bottom: 0;
+}
+
+main #Produtos .lista-produtos .produto .nome-botao button {
+  width: 35vw;
+  height: 8vw;
+}
+/*SESSAO 4: */
+
+main #Diferenciais img{
+display: none;
+}
+/*SESSAO 5: */
+
+main #Depoimentos .cards-depoimento {
+  gap: 7vw;
+}
+
+main #Depoimentos .depoimento {
+  width: 80vw;
+  padding: 5vw;
+}
+
+main #Depoimentos .depoimento {
+  font-size: 1.2rem;
+}
+
+/*SESSAO 6: */
+
+#contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DFC8B6;
+    color: white;
+  }
+
+  #contatos p {
+    padding: 5vw;
+  }
+
+    #contatos form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    padding-block: 5vw;
+    gap: 3.5vw;
+  }
+
+  #contatos .form-placeholder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vw;
+    margin-block: 5vw;
+  }
+
+  
+   #contatos .form-placeholder input, #contatos textarea {
+    background-color: black;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 80%;
+    margin: 2vw;
+    padding: 1vw;
+   }
+
+     #contatos button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    width: 30vw;
+    height: 10vw;
+    border-radius: 10px;
+  }
+
+   textarea {
+    height: 25vw;
+   }
+/*FOOTER: */
+#footer {
+  display: none;
+}
+  #responsive-footer {
+    width: 90%;
+    padding: 5vw;
+    background-color: #c4c8b6;
+  }
+
+  #responsive-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #responsive-footer #Logo {
+    font-size: 1.2rem;
+    font-family: "Poiret One", sans-serif;
+  }
+
+  #responsive-footer p {
+    font-weight: bold;
+  }
+
+  #responsive-footer p span {
+    color: #1d361f;
+  }
+}
+
+
+
+@media (max-width: 361px) {
+  h2,
+  main #Sobre h2 {
+    font-size: 1.5rem;
+  }
+
+  body p {
+    font-size: 0.8rem;
+  }
+
+  /*SESSAO 2:*/
+
+  main #Home .texto-apresentacao h1 {
+    font-size: 2rem;
+  }
+
+  main #Home .texto-apresentacao p {
+    width: 80%;
+  }
+
+  main #Home img {
+    width: 80vw;
+  }
+
+  main #Sobre p {
+    width: 80%;
+  }
+
+  /*SESSAO 3: */
+  main #Produtos .lista-produtos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    gap: 30vw;
+    padding-block: 2vw;
+  }
+
+  main #Produtos .lista-produtos .produto {
+    width: 80vw;
+    height: 115vw;
+  }
+
+  main #Produtos .lista-produtos .produto img {
+    width: 50vw;
+  }
+
+  main #Produtos .lista-produtos .produto .nome-botao {
+    padding-bottom: 4vw;
+  }
+
+  main #Produtos .lista-produtos .produto .nome-botao hr {
+    margin-top: 3vw;
+    margin-bottom: 6vw;
+  }
+
+  main #Produtos .lista-produtos .produto .nome-botao button {
+    width: 45vw;
+    height: 10vw;
+  }
+  /*SESSAO 4: */
+
+  main #Diferenciais {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main #Diferenciais img {
+    display: none;
+  }
+
+  main #Diferenciais .texto-diferenciais ul {
+    font-size: 0.8rem;
+    gap: 10vw;
+    display: flex;
+    flex-direction: column;
+  }
+  /*SESSAO 5: */
+  main #Depoimentos .cards-depoimento {
+    gap: 30vw;
+  }
+
+  main #Depoimentos .depoimento {
+    width: 80vw;
+    height: 90vw;
+    padding: 5vw;
+  }
+
+  main #Depoimentos .depoimento .nome-avaliacao h3 {
+    font-size: 1.1rem;
+  }
+  main #Depoimentos .depoimento .nome-avaliacao img {
+    width: 40vw;
+  }
+
+  /*SESSAO 6: */
+
+  #contatos p {
+    padding: 5vw;
+  }
+
+  #contatos h2 {
+    text-align: center;
+  }
+
+  #contatos form {
+    gap: 2vw;
+  }
+
+  #contatos .form-placeholder {
+    gap: 6vw;
+    margin-block: 10vw;
+  }
+
+
+#contatos button {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  width: 30vw;
+  height: 12vw;
+  border-radius: 10px;
+}
 }
