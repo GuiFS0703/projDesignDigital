@@ -19,7 +19,8 @@ h2 {
   font-weight: bold;
 }
 
-input, button {
+input,
+button {
   font-size: 1.25rem;
 }
 
@@ -39,7 +40,6 @@ ul {
 #responsive-footer {
   display: none;
 }
-
 
 #menu {
   height: 5vw;
@@ -328,70 +328,68 @@ main #Depoimentos .depoimento .nome-avaliacao {
 /*SESSAO 6: */
 
 #contatos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #DFC8B6;
-    color: white;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #dfc8b6;
+  color: white;
+}
 
-  #contatos p {
-    padding: 5vw;
-    width: 50%;
-    line-height: 1.5;
-  }
+#contatos p {
+  padding: 5vw;
+  width: 50%;
+  line-height: 1.5;
+}
 
-    #contatos form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
-    width: 100%;
-    gap: 3.5vw;
-    padding-block: 2vw;
-  }
+#contatos form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  gap: 3.5vw;
+  padding-block: 2vw;
+}
 
-  #contatos .form-placeholder {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 4vw;
-  }
+#contatos .form-placeholder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4vw;
+}
 
-  
-   #contatos .form-placeholder input {
-    background-color: black;
-    color: white;
-    border: none;
-    border-bottom: 2px solid white;
-    width: 80%;
-    margin: 2vw;
-    padding: 1vw;
-   }
+#contatos .form-placeholder input {
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 80%;
+  margin: 2vw;
+  padding: 1vw;
+}
 
-     #contatos button {
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-    width: 10vw;
-    height: 4vw;
-    border-radius: 10px;
-  }
+#contatos button {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  width: 10vw;
+  height: 4vw;
+  border-radius: 10px;
+}
 
-   textarea {
-    height: 5vw;
-    margin: 2vw;
-    padding: 1vw;
-      background-color: black;
-    color: white;
-    border: none;
-    border-bottom: 2px solid white;
-    width: 40%;
-    font-size: 1.25rem;
-   }
-
+textarea {
+  height: 5vw;
+  margin: 2vw;
+  padding: 1vw;
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 40%;
+  font-size: 1.25rem;
+}
 
 /*FOOTER: */
 
@@ -419,7 +417,7 @@ main #Depoimentos .depoimento .nome-avaliacao {
   color: #1d361f;
 }
 
-#footer .superior-footer .email .button-input{
+#footer .superior-footer .email .button-input {
   display: flex;
   align-items: center;
   gap: 1vw;
@@ -509,43 +507,43 @@ main #Depoimentos .depoimento .nome-avaliacao {
   }
 
   main #Produtos .lista-produtos .produto img {
-  width: 15vw;
-} 
+    width: 15vw;
+  }
 
-main #Produtos .lista-produtos .produto .nome-botao button {
-  height: 5vw;
-  width: 20vw;
-  font-size: 1.2rem;
-}
-main #Produtos .lista-produtos .produto .nome-botao  {
-  padding-bottom: 2vw;
-}
+  main #Produtos .lista-produtos .produto .nome-botao button {
+    height: 5vw;
+    width: 20vw;
+    font-size: 1.2rem;
+  }
+  main #Produtos .lista-produtos .produto .nome-botao {
+    padding-bottom: 2vw;
+  }
 
-/*SESSAO 5: */
-main #Depoimentos .cards-depoimento {
-  display: flex;
-flex-direction: column;
-align-items: center;
-gap: 8vw;
-}
+  /*SESSAO 5: */
+  main #Depoimentos .cards-depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8vw;
+  }
 
-main #Depoimentos .depoimento {
-  width: 45vw;
-}
+  main #Depoimentos .depoimento {
+    width: 45vw;
+  }
 
-/*FOOTER: */
-#footer .superior-footer .email button {
-  display: none;
-}
+  /*FOOTER: */
+  #footer .superior-footer .email button {
+    display: none;
+  }
 
-#footer .superior-footer .email input {
-  width: 35vw;
-}
+  #footer .superior-footer .email input {
+    width: 35vw;
+  }
 
-/*FOOTER: */
-#footer .inferior-footer .links {
-  width: 80vw;
-}
+  /*FOOTER: */
+  #footer .inferior-footer .links {
+    width: 80vw;
+  }
 }
 
 @media (max-width: 770px) {
@@ -560,7 +558,7 @@ main #Depoimentos .depoimento {
     position: static;
     margin: 0;
   }
-    #menu-responsivo {
+  #menu-responsivo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -570,9 +568,9 @@ main #Depoimentos .depoimento {
   }
 
   #menu-responsivo p {
-        font-family: "Poiret One", sans-serif;
-        font-size: 2rem;
-      }
+    font-family: "Poiret One", sans-serif;
+    font-size: 2rem;
+  }
 
   /*SESSAO 1: */
 
@@ -588,11 +586,10 @@ main #Depoimentos .depoimento {
     width: 80%;
   }
 
-/*SESSAO 2: */
-main #Sobre p {
-  width: 70%;
-}
-
+  /*SESSAO 2: */
+  main #Sobre p {
+    width: 70%;
+  }
 
   /*SESSAO 3: */
 
@@ -601,7 +598,7 @@ main #Sobre p {
   }
 
   main #Produtos .lista-produtos {
-   row-gap: 25vw;
+    row-gap: 25vw;
   }
 
   main #Produtos .lista-produtos .produto {
@@ -623,8 +620,8 @@ main #Sobre p {
   }
 
   /*SESSAO 5: */
-  main #Depoimentos .cards-depoimento{
-    gap: 5vw  
+  main #Depoimentos .cards-depoimento {
+    gap: 5vw;
   }
 
   main #Depoimentos .depoimento {
@@ -632,37 +629,38 @@ main #Sobre p {
   }
 
   /*SESSAO 6: */
-textarea {
-  height: 15vw;
-  width: 60%;
-}
+  textarea {
+    height: 15vw;
+    width: 60%;
+  }
 
-#contatos button {
-  width: 25vw;
-  height: 8vw;
-}
+  #contatos button {
+    width: 25vw;
+    height: 8vw;
+  }
   /*FOOTER: */
 
-#footer .superior-footer .email input {
-  width: 35vw;
-}
+  #footer .superior-footer .email input {
+    width: 35vw;
+  }
 
-#footer .superior-footer .email button {
-  display: none;
-}
+  #footer .superior-footer .email button {
+    display: none;
+  }
 
-#footer .inferior-footer .links {
-  width: 95vw;
-}
+  #footer .inferior-footer .links {
+    width: 95vw;
+  }
 }
 
 @media (max-width: 481px) {
-
-  ul, button, textarea {
+  ul,
+  button,
+  textarea {
     font-size: 1.2rem;
     line-height: 1.5;
   }
-   h2,
+  h2,
   main #Sobre h2 {
     font-size: 1.7rem;
   }
@@ -671,7 +669,7 @@ textarea {
     width: 80vw;
   }
 
-   body p {
+  body p {
     line-height: 1.5;
     font-size: 1.2rem;
     text-align: justify;
@@ -680,85 +678,84 @@ textarea {
   li {
     margin-block: 1.5vw;
   }
- 
-  
-    #menu-responsivo #logo-resp {
+
+  #menu-responsivo #logo-resp {
     font-size: 1.7rem;
   }
 
   /*SESSAO 2: */
-   
+
   main #Home {
     flex-direction: column;
     align-items: center;
     width: 90vw;
   }
-   main #Home .texto-apresentacao {
+  main #Home .texto-apresentacao {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-   main #Home img {
+  main #Home img {
     width: 70vw;
   }
 
   /*SESSAO 3: */
-    main #Produtos .lista-produtos {
+  main #Produtos .lista-produtos {
     gap: 10vw;
-    }
+  }
 
-   main #Produtos .lista-produtos .produto {
-   width: 42vw;
-   height: 60vw;
-  } 
+  main #Produtos .lista-produtos .produto {
+    width: 42vw;
+    height: 60vw;
+  }
 
   main #Produtos .lista-produtos .produto img {
     width: 20vw;
-}
+  }
 
-main #Produtos .lista-produtos .produto .nome-botao {
-  padding-bottom: 2vw;
-}
+  main #Produtos .lista-produtos .produto .nome-botao {
+    padding-bottom: 2vw;
+  }
 
-main #Produtos .lista-produtos .produto .nome-botao p{
-  text-align: center;
-  margin-bottom: 0;
-}
+  main #Produtos .lista-produtos .produto .nome-botao p {
+    text-align: center;
+    margin-bottom: 0;
+  }
 
-main #Produtos .lista-produtos .produto .nome-botao button {
-  width: 37vw;
-  height: 8vw;
-}
-/*SESSAO 4: */
+  main #Produtos .lista-produtos .produto .nome-botao button {
+    width: 37vw;
+    height: 8vw;
+  }
+  /*SESSAO 4: */
 
-main #Diferenciais img{
-display: none;
-}
-/*SESSAO 5: */
+  main #Diferenciais img {
+    display: none;
+  }
+  /*SESSAO 5: */
 
-main #Depoimentos .cards-depoimento {
-  gap: 7vw;
-}
+  main #Depoimentos .cards-depoimento {
+    gap: 7vw;
+  }
 
-main #Depoimentos .depoimento {
-  width: 80vw;
-  padding: 5vw;
-}
+  main #Depoimentos .depoimento {
+    width: 80vw;
+    padding: 5vw;
+  }
 
-main #Depoimentos .depoimento {
-  font-size: 1.2rem;
-}
+  main #Depoimentos .depoimento {
+    font-size: 1.2rem;
+  }
 
-/*SESSAO 6: */
+  /*SESSAO 6: */
 
   #contatos p {
     padding: 5vw;
     width: 80%;
   }
 
-    #contatos form {
+  #contatos form {
     width: 100%;
     padding-block: 5vw;
     gap: 3.5vw;
@@ -769,26 +766,26 @@ main #Depoimentos .depoimento {
     margin-block: 5vw;
   }
 
-  
-   #contatos .form-placeholder input, #contatos textarea {
+  #contatos .form-placeholder input,
+  #contatos textarea {
     width: 80%;
     margin: 2vw;
     padding: 1vw;
-   }
+  }
 
-     #contatos button {
+  #contatos button {
     width: 30vw;
     height: 10vw;
     border-radius: 10px;
   }
 
-   textarea {
+  textarea {
     height: 25vw;
-   }
-/*FOOTER: */
-#footer {
-  display: none;
-}
+  }
+  /*FOOTER: */
+  #footer {
+    display: none;
+  }
   #responsive-footer {
     width: 90%;
     padding: 5vw;
@@ -815,16 +812,17 @@ main #Depoimentos .depoimento {
   }
 }
 
-
-
 @media (max-width: 361px) {
   h2,
   main #Sobre h2 {
     font-size: 1.5rem;
   }
 
-
-  body p, button, textarea, ul, input {
+  body p,
+  button,
+  textarea,
+  ul,
+  input {
     font-size: 0.8rem;
   }
 
@@ -848,9 +846,9 @@ main #Depoimentos .depoimento {
 
   /*SESSAO 3: */
   main #Produtos .lista-produtos {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 30vw;
     padding-block: 2vw;
   }
@@ -931,13 +929,12 @@ main #Depoimentos .depoimento {
     margin-block: 10vw;
   }
 
-
-#contatos button {
-  background-color: black;
-  color: white;
-  border: 2px solid white;
-  width: 27vw;
-  height: 10vw;
-  border-radius: 10px;
-}
+  #contatos button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    width: 27vw;
+    height: 10vw;
+    border-radius: 10px;
+  }
 }
